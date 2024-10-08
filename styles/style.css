@@ -1,0 +1,376 @@
+html {
+    box-sizing: border-box;
+}
+
+*,    /* Понять что тут происходит */
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p,h1,h2,h3,h4,h5,h6,figure,figcaption,span {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+body {
+    min-width: 320px;
+    word-break: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* global */
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* header ------------------------------------------------------------------------------------- */
+
+.header {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header-top-wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #45536d;
+}
+
+.logo-link {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.header-slogan {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: lowercase;
+    color: #434a5c;
+}
+
+.header-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 40px;
+}
+
+.header-top-left-side-container {
+    display: flex;
+    align-items: baseline;
+    gap: 25px;
+}
+
+.header-top-right-side-container {
+    display: flex;
+    gap: 20px;
+}
+
+.header-bottom-left-side-container {
+    display: flex;
+    gap: 20px;
+}
+
+.header-bottom-right-side-container {
+    display: flex;
+    gap: 20px;
+}
+
+.feedback-link {
+    width: 119px;
+    height: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #576698;
+}
+
+.telephone-span {
+    width: 102px;
+    height: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #484848;
+}
+
+.nav-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+}
+
+/* entertainment ------------------------------------------------------------------------------ */
+
+.head-title {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.main-picture {
+    max-width: 1140px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.title-h1 {
+    width: 800px;
+    font-weight: 600;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #141414;
+    margin: 30px 0 30px;
+}
+
+.entertainment-h2 {
+    max-width: 1140px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 28px;
+    color: #bf6024;
+    margin-bottom: 35px;
+}
+
+.entertainment-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid: auto / repeat(2, 1fr);
+    gap: 60px 25px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.entertainment-cards {
+    width: 555px;
+    height: 330px;
+}
+
+.figcaption-link {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #141414;
+    margin-top: 15px;
+}
+
+/* residence ---------------------------------------------------------------------------------- */
+
+.residence-section {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #7A7A7A;
+}
+
+.residence-h2 {
+    font-weight: 600;
+    font-size: 28px;
+    color: #bf6024;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.residence-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px 25px;
+}
+
+.residence-card-first-colomn {
+    width: 555px;
+    height: 600px;
+    background-image: url('../images/residence/image-3.png');
+}
+
+.residence-h3-white {
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.residence-link-first-colomn {
+    width: 120px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 50px;
+    color: #e5c6b2;
+    text-transform: uppercase;
+    border: 1px solid;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.residence-card-second-colomn {
+    width: 540px;
+    height: 285px;
+    background-color: #eaedf2;
+}
+
+.residence-h3-black {
+    width: 270px;
+    height: 65px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #141414;
+}
+
+.residence-btn-first-colomn {
+    width: 145px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #e5c6b2;
+    border-radius: 50px;
+    background-color: #bf6024;
+    text-transform: uppercase;
+}
+
+.residence-btn-second-colomn {
+    width: 145px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #E5C6B2;
+    border-radius: 50px;
+    background-color: #bf6024;
+    text-transform: uppercase;
+}
+
+.first-card-container {
+    padding-top: 493px;
+    padding-left: 40px;
+}
+
+.first-card-btn-container {
+    display: flex;
+    gap: 0 20px;
+}
+
+.second-card-container {
+    width: 205px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-top: 100px;
+}
+
+.third-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.residence-link-second-card {
+    width: 144px;
+    height: 28px;
+    /* padding: 5px 13px 5px 13px; */
+    border-radius: 50px ;
+    padding: 5px 15px;
+    color: #BF6024;
+    text-transform: uppercase;
+    border: 1px solid;
+    margin: 30px 0 0 75px;
+}
+
+.residence-link-third-card {
+    width: 144px;
+    height: 28px;
+    /* padding: 5px 13px 5px 13px; */
+    border-radius: 50px ;
+    padding: 5px 15px;
+    color: #BF6024;
+    text-transform: uppercase;
+    border: 1px solid;
+    margin: 30px 0 0 75px;
+}
+
+.residence-text {
+    width: 262px;
+    height: 54px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* footer ------------------------------------------------------------------------------------- */
+
+.footer-section {
+    max-width: 1140px;
+    height: 70px;
+    display: flex;
+    margin: 50px auto 70px;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+.footer-right-side-notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trademark {
+    width: 169px;
+    height: 18px;
+    font-weight: 600;
+}
+
+.feedback-text {
+    width: 119px;
+    height: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.blue-meadow-address {
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.information-text {
+    width: 340px;
+    height: 50px;
+}
